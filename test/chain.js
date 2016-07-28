@@ -210,8 +210,6 @@ describe('chain', function() {
 
       });
 
-      console.dir(rules[0].occurrences[0].chain[0]);
-
       // do we have a rule ?
       if(!rule) assert.fail('Expected a error');
 
