@@ -19,3 +19,5 @@ public/generated/
 main.js
 phantomjs-1.9.2-linux-x86_64
 phantomjs-1.9.2-macosx
+
+tmp/
