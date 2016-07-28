@@ -1,0 +1,86 @@
+CONNECTED(00000003)
+depth=2 C = GB, ST = Greater Manchester, L = Salford, O = COMODO CA Limited, CN = COMODO RSA Certification Authority
+verify error:num=20:unable to get local issuer certificate
+verify return:0
+---
+Certificate chain
+ 0 s:/OU=Domain Control Validated/OU=PositiveSSL Wildcard/CN=*.badssl.com
+   i:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server CA
+ 1 s:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server CA
+   i:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority
+ 2 s:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority
+   i:/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIFSzCCBDOgAwIBAgIQL+sYJRh8GlCGQHtE5beFpTANBgkqhkiG9w0BAQsFADCB
+kDELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4G
+A1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxNjA0BgNV
+BAMTLUNPTU9ETyBSU0EgRG9tYWluIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBD
+QTAeFw0xNTA0MDkwMDAwMDBaFw0xNjA3MDcyMzU5NTlaMFkxITAfBgNVBAsTGERv
+bWFpbiBDb250cm9sIFZhbGlkYXRlZDEdMBsGA1UECxMUUG9zaXRpdmVTU0wgV2ls
+ZGNhcmQxFTATBgNVBAMUDCouYmFkc3NsLmNvbTCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBAMIE7PiM7gTCs9hQ1XBYzJMY61yoaEmwIrX5lZ6xKyx2PmzA
+S2BMTOqytMAPgLaw+XLJhgL5XEFdEyt/ccRLvOmULlA3pmccYYz2QULFRtMWhyef
+dOsKnRFSJiFzbIRMeVXk0WvoBj1IFVKtsyjbqv9u/2CVSndrOfEk0TG23U3AxPxT
+uW1CrbV8/q71FdIzSOciccfCFHpsKOo3St/qbLVytH5aohbcabFXRNsKEqveww9H
+dFxBIuGa+RuT5q0iBikusbpJHAwnnqP7i/dAcgCskgjZjFeEU4EFy+b+a1SYQCeF
+xxC7c3DvaRhBB0VVfPlkPz0sw6l865MaTIbRyoUCAwEAAaOCAdUwggHRMB8GA1Ud
+IwQYMBaAFJCvajqUWgvYkOoSVnPfQ7Q6KNrnMB0GA1UdDgQWBBSd7sF7gQs6R2lx
+GH0RN5O8pRs/+zAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUE
+FjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwTwYDVR0gBEgwRjA6BgsrBgEEAbIxAQIC
+BzArMCkGCCsGAQUFBwIBFh1odHRwczovL3NlY3VyZS5jb21vZG8uY29tL0NQUzAI
+BgZngQwBAgEwVAYDVR0fBE0wSzBJoEegRYZDaHR0cDovL2NybC5jb21vZG9jYS5j
+b20vQ09NT0RPUlNBRG9tYWluVmFsaWRhdGlvblNlY3VyZVNlcnZlckNBLmNybDCB
+hQYIKwYBBQUHAQEEeTB3ME8GCCsGAQUFBzAChkNodHRwOi8vY3J0LmNvbW9kb2Nh
+LmNvbS9DT01PRE9SU0FEb21haW5WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EuY3J0
+MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wIwYDVR0RBBww
+GoIMKi5iYWRzc2wuY29tggpiYWRzc2wuY29tMA0GCSqGSIb3DQEBCwUAA4IBAQCL
+OKyT4gZim9wO1SyRrLf+IhQ6kD4TSgCvUIr6uMOaGWvggcjAxQmXT94tqzg93kTC
+3okAjahcXzQReWDFFdcD+etZ5hqDAg4FpG3mR994nDSmO5gaW9BpuSPb7zHRmkoQ
+84x06Sk1M1QPlis/EiLHR8JoIz+psLKK0WkIiCSQVAnkN4R5VpaRuEQh8v5SuLXo
+D8o5froZeVFHRAguE8joC8bwmiyGQqWvuNXC6Zq45Ydlo1Vyam+wZuQ/ODlRerrQ
+5TXftG5lE/U32JzTqb3jDy3YTjGpTlujNxY5r5fKGaucTTBsMhnLlj+0Dr4TdE1r
+GTh+vUk+sJO+zDDOthzt
+-----END CERTIFICATE-----
+subject=/OU=Domain Control Validated/OU=PositiveSSL Wildcard/CN=*.badssl.com
+issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server CA
+---
+No client certificate CA names sent
+---
+SSL handshake has read 5008 bytes and written 440 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES128-GCM-SHA256
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : TLSv1.1
+    Cipher    : ECDHE-RSA-AES128-GCM-SHA256
+    Session-ID: 6E90E06E004ED30C57EDD0C8A3732833C38061E8B2F4AB452C474C8213C1F7B1
+    Session-ID-ctx: 
+    Master-Key: 462F87F9C1E95736B08997B06ABA8D65A20E94FE1195C6FCD01724620676C7AA3E2C6F51BF86E6F9DC14DDC72550719E
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - 5c 63 e5 7f 34 e9 e6 c2-79 ae ef ed f7 5d f8 dd   \c..4...y....]..
+    0010 - 4e bd 5c 6c 27 99 76 b2-4c 43 5a cd 35 56 e6 8f   N.\l'.v.LCZ.5V..
+    0020 - 3d 80 46 ce a1 58 f4 f6-46 fb 1a bd 8e 0e c8 29   =.F..X..F......)
+    0030 - 4a d2 51 ec 97 62 ae dc-64 ca 65 66 fc 66 e5 a0   J.Q..b..d.ef.f..
+    0040 - 0c 47 dc 76 95 33 8a fc-bd 62 37 74 2c 20 3b 8e   .G.v.3...b7t, ;.
+    0050 - 19 c9 6a 9c 10 b1 20 b1-e8 ea ee 92 11 31 e9 73   ..j... ......1.s
+    0060 - c1 38 a4 8d d8 74 4f 6e-08 df 54 aa d3 67 e7 37   .8...tOn..T..g.7
+    0070 - e2 e3 3b e0 a7 da e7 bb-5c d2 a9 d9 1c 2b d6 5c   ..;.....\....+.\
+    0080 - 6b be 26 1f d3 2a df 1e-b7 a1 3b e8 1a c0 08 82   k.&..*....;.....
+    0090 - 34 84 65 7f 8a b9 f5 ef-4d 0e 61 95 34 28 4e f5   4.e.....M.a.4(N.
+    00a0 - 50 05 0c f0 70 fd d3 f8-71 3d ce 74 73 f6 81 47   P...p...q=.ts..G
+    00b0 - f5 1b 8f 21 46 8f de c8-f5 89 ec ef 0e fd 9f 30   ...!F..........0
+
+    Start Time: 1466485117
+    Timeout   : 300 (sec)
+    Verify return code: 20 (unable to get local issuer certificate)
+---

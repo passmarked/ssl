@@ -1,0 +1,22 @@
+before_install:
+  - sudo apt-get install -y wget openssl libssl-dev coreutils
+  - sudo apt-get install -y build-essential
+  - wget -O openssl https://package.passmarked.com/openssl/builds/openssl-x86-1.0.2h.bin
+  - sudo mkdir -p /usr/local/ssl/bin/
+  - sudo cp openssl /usr/local/ssl/bin/openssl
+  - sudo chmod a+x /usr/local/ssl/bin/openssl
+  - sudo apt-get install -y ca-certificates
+language: node_js
+env:
+  - CXX=g++-4.8
+node_js:
+  - '6.2'
+  - '5.1'
+  - '4.2'
+  - '0.12'
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8

@@ -1,0 +1,94 @@
+CONNECTED(00000003)
+depth=3 C = SE, O = AddTrust AB, OU = AddTrust External TTP Network, CN = AddTrust External CA Root
+verify return:1
+depth=2 C = GB, ST = Greater Manchester, L = Salford, O = COMODO CA Limited, CN = COMODO RSA Certification Authority
+verify return:1
+depth=1 C = GB, ST = Greater Manchester, L = Salford, O = COMODO CA Limited, CN = COMODO RSA Domain Validation Secure Server CA
+verify return:1
+depth=0 OU = Domain Control Validated, OU = PositiveSSL Wildcard, CN = *.badssl.com
+verify return:1
+---
+Certificate chain
+ 0 s:/OU=Domain Control Validated/OU=PositiveSSL Wildcard/CN=*.badssl.com
+   i:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server CA
+ 1 s:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server CA
+   i:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority
+ 2 s:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Certification Authority
+   i:/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIFSzCCBDOgAwIBAgIQL+sYJRh8GlCGQHtE5beFpTANBgkqhkiG9w0BAQsFADCB
+kDELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4G
+A1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxNjA0BgNV
+BAMTLUNPTU9ETyBSU0EgRG9tYWluIFZhbGlkYXRpb24gU2VjdXJlIFNlcnZlciBD
+QTAeFw0xNTA0MDkwMDAwMDBaFw0xNjA3MDcyMzU5NTlaMFkxITAfBgNVBAsTGERv
+bWFpbiBDb250cm9sIFZhbGlkYXRlZDEdMBsGA1UECxMUUG9zaXRpdmVTU0wgV2ls
+ZGNhcmQxFTATBgNVBAMUDCouYmFkc3NsLmNvbTCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBAMIE7PiM7gTCs9hQ1XBYzJMY61yoaEmwIrX5lZ6xKyx2PmzA
+S2BMTOqytMAPgLaw+XLJhgL5XEFdEyt/ccRLvOmULlA3pmccYYz2QULFRtMWhyef
+dOsKnRFSJiFzbIRMeVXk0WvoBj1IFVKtsyjbqv9u/2CVSndrOfEk0TG23U3AxPxT
+uW1CrbV8/q71FdIzSOciccfCFHpsKOo3St/qbLVytH5aohbcabFXRNsKEqveww9H
+dFxBIuGa+RuT5q0iBikusbpJHAwnnqP7i/dAcgCskgjZjFeEU4EFy+b+a1SYQCeF
+xxC7c3DvaRhBB0VVfPlkPz0sw6l865MaTIbRyoUCAwEAAaOCAdUwggHRMB8GA1Ud
+IwQYMBaAFJCvajqUWgvYkOoSVnPfQ7Q6KNrnMB0GA1UdDgQWBBSd7sF7gQs6R2lx
+GH0RN5O8pRs/+zAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUE
+FjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwTwYDVR0gBEgwRjA6BgsrBgEEAbIxAQIC
+BzArMCkGCCsGAQUFBwIBFh1odHRwczovL3NlY3VyZS5jb21vZG8uY29tL0NQUzAI
+BgZngQwBAgEwVAYDVR0fBE0wSzBJoEegRYZDaHR0cDovL2NybC5jb21vZG9jYS5j
+b20vQ09NT0RPUlNBRG9tYWluVmFsaWRhdGlvblNlY3VyZVNlcnZlckNBLmNybDCB
+hQYIKwYBBQUHAQEEeTB3ME8GCCsGAQUFBzAChkNodHRwOi8vY3J0LmNvbW9kb2Nh
+LmNvbS9DT01PRE9SU0FEb21haW5WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EuY3J0
+MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5jb21vZG9jYS5jb20wIwYDVR0RBBww
+GoIMKi5iYWRzc2wuY29tggpiYWRzc2wuY29tMA0GCSqGSIb3DQEBCwUAA4IBAQCL
+OKyT4gZim9wO1SyRrLf+IhQ6kD4TSgCvUIr6uMOaGWvggcjAxQmXT94tqzg93kTC
+3okAjahcXzQReWDFFdcD+etZ5hqDAg4FpG3mR994nDSmO5gaW9BpuSPb7zHRmkoQ
+84x06Sk1M1QPlis/EiLHR8JoIz+psLKK0WkIiCSQVAnkN4R5VpaRuEQh8v5SuLXo
+D8o5froZeVFHRAguE8joC8bwmiyGQqWvuNXC6Zq45Ydlo1Vyam+wZuQ/ODlRerrQ
+5TXftG5lE/U32JzTqb3jDy3YTjGpTlujNxY5r5fKGaucTTBsMhnLlj+0Dr4TdE1r
+GTh+vUk+sJO+zDDOthzt
+-----END CERTIFICATE-----
+subject=/OU=Domain Control Validated/OU=PositiveSSL Wildcard/CN=*.badssl.com
+issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server CA
+---
+No client certificate CA names sent
+Peer signing digest: SHA1
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 5008 bytes and written 452 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES128-GCM-SHA256
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES128-GCM-SHA256
+    Session-ID: 6B45C21B31F381178CD054472781D32EA5F93830A6B8E103E3B8E3A635834416
+    Session-ID-ctx: 
+    Master-Key: F203C1F15725E6DEC39E76BEBA8CD5F0B2FC1EF286805373CCF7E968E71A0BB135C3C5FA6F192FED57573B006D38AD20
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - 5c 63 e5 7f 34 e9 e6 c2-79 ae ef ed f7 5d f8 dd   \c..4...y....]..
+    0010 - f5 d9 7d b0 c0 fd c7 3b-1e 2c 2f 4c 0e 26 d8 64   ..}....;.,/L.&.d
+    0020 - 7f 5e 8f 27 7a 30 75 d2-7c 12 9d ae 43 8e 1a 81   .^.'z0u.|...C...
+    0030 - f5 0e c6 fb 0a e2 dd 6e-1e 30 c4 f1 99 c9 13 b3   .......n.0......
+    0040 - d3 35 95 18 f1 ab 2c 93-9d 83 53 ea cf 3b 1d ed   .5....,...S..;..
+    0050 - 54 f1 0e 6b 36 96 7c 40-03 75 ae c1 7e 9f 50 5c   T..k6.|@.u..~.P\
+    0060 - 5f a0 16 08 c3 c3 dd a6-3e 14 fe 85 df 72 43 9e   _.......>....rC.
+    0070 - 3d 5a a5 47 4d 61 e3 34-96 4e 08 45 cd 7d e1 e3   =Z.GMa.4.N.E.}..
+    0080 - 92 f6 fc db b0 f5 ac f4-98 00 3e 7c ff 09 07 f9   ..........>|....
+    0090 - 89 1a 7b 94 ba 06 18 a5-5d fe 2a cf 65 16 21 35   ..{.....].*.e.!5
+    00a0 - 9b 55 7d 4d 0d b6 9a 51-eb c8 25 5d 6e 57 30 08   .U}M...Q..%]nW0.
+    00b0 - 7a 78 98 58 f1 45 ed 62-22 df a6 c4 8e 50 a6 ab   zx.X.E.b"....P..
+
+    Start Time: 1466507456
+    Timeout   : 300 (sec)
+    Verify return code: 0 (ok)
+---

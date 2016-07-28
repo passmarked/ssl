@@ -1,0 +1,141 @@
+CONNECTED(00000003)
+TLS server extension "server name" (id=0), len=0
+TLS server extension "renegotiation info" (id=65281), len=1
+0001 - <SPACES/NULS>
+TLS server extension "EC point formats" (id=11), len=4
+0000 - 03 00 01 02                                       ....
+TLS server extension "session ticket" (id=35), len=0
+TLS server extension "status request" (id=5), len=0
+depth=1 C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert SHA2 Extended Validation Server CA
+verify error:num=20:unable to get local issuer certificate
+verify return:0
+OCSP response: 
+======================================
+OCSP Response Data:
+    OCSP Response Status: error (0x4)
+    Response Type: Basic OCSP Response
+    Version: 1 (0x0)
+    Responder Id: 3DD350A5D6A0ADEEF34A600A65D321D4F8F8D60F
+    Produced At: Jun 22 11:30:00 2016 GMT
+    Responses:
+    Certificate ID:
+      Hash Algorithm: sha1
+      Issuer Name Hash: 49F4BD8A18BF760698C5DE402D683B716AE4E686
+      Issuer Key Hash: 3DD350A5D6A0ADEEF34A600A65D321D4F8F8D60F
+      Serial Number: 0C65EE17621915CD0E0221330DDB7D97
+    Cert Status: good
+    This Update: Jun 22 11:30:00 2016 GMT
+    Next Update: Jun 29 10:45:00 2016 GMT
+
+    Signature Algorithm: sha256WithRSAEncryption
+         53:72:e0:a1:8a:8c:8b:32:06:e4:fa:70:92:1c:c9:e0:7d:f6:
+         a7:30:bd:81:ab:c8:96:d7:20:25:37:f0:4a:da:36:ef:1e:cf:
+         f4:a9:28:41:ae:cb:1d:70:3d:1d:5b:2e:15:c3:76:23:89:0a:
+         f2:04:99:c1:ef:16:82:d2:69:b3:15:ce:7b:c0:18:6b:23:b0:
+         c9:1c:a8:4f:11:f1:d6:8a:64:01:07:95:44:df:67:96:80:05:
+         76:59:b2:ce:1e:7c:20:9e:1d:03:ef:57:f8:ed:51:96:53:db:
+         40:33:ce:72:77:85:f2:88:7d:ab:c5:e8:43:db:07:b0:7b:26:
+         34:b0:38:81:3b:8b:1c:14:11:82:b3:11:cb:74:72:63:9e:f1:
+         00:f9:b2:a2:8f:2b:37:6f:90:36:77:b5:03:ba:f5:75:e1:6f:
+         fb:00:40:21:21:a2:1b:25:69:99:0e:c2:a3:72:15:fc:85:36:
+         02:8f:1c:b7:e9:08:a2:a0:d6:55:b9:59:30:90:3f:8a:44:62:
+         27:5a:ef:f8:61:56:08:78:ae:07:99:fd:aa:2c:a7:cb:a5:68:
+         56:f7:79:ef:db:97:2b:04:cd:17:89:be:97:5c:8f:81:6f:5b:
+         13:92:aa:1e:37:34:ba:0a:ea:f6:ad:6f:66:02:84:c1:3f:b5:
+         82:c2:c3:d9
+======================================
+---
+Certificate chain
+ 0 s:/businessCategory=Private Organization/1.3.6.1.4.1.311.60.2.1.3=US/1.3.6.1.4.1.311.60.2.1.2=Delaware/serialNumber=5118787/street=10th Floor/street=101 Avenue of the Americas/postalCode=10013/C=US/ST=New York/L=New York/O=Digital Ocean, Inc./CN=www.digitalocean.com
+   i:/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 Extended Validation Server CA
+ 1 s:/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 Extended Validation Server CA
+   i:/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert High Assurance EV Root CA
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIH3DCCBsSgAwIBAgIQDGXuF2IZFc0OAiEzDdt9lzANBgkqhkiG9w0BAQsFADB1
+MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+d3cuZGlnaWNlcnQuY29tMTQwMgYDVQQDEytEaWdpQ2VydCBTSEEyIEV4dGVuZGVk
+IFZhbGlkYXRpb24gU2VydmVyIENBMB4XDTE2MDUxOTAwMDAwMFoXDTE4MDYwNjEy
+MDAwMFowggEbMR0wGwYDVQQPDBRQcml2YXRlIE9yZ2FuaXphdGlvbjETMBEGCysG
+AQQBgjc8AgEDEwJVUzEZMBcGCysGAQQBgjc8AgECEwhEZWxhd2FyZTEQMA4GA1UE
+BRMHNTExODc4NzETMBEGA1UECRMKMTB0aCBGbG9vcjEjMCEGA1UECRMaMTAxIEF2
+ZW51ZSBvZiB0aGUgQW1lcmljYXMxDjAMBgNVBBETBTEwMDEzMQswCQYDVQQGEwJV
+UzERMA8GA1UECBMITmV3IFlvcmsxETAPBgNVBAcTCE5ldyBZb3JrMRwwGgYDVQQK
+ExNEaWdpdGFsIE9jZWFuLCBJbmMuMR0wGwYDVQQDExR3d3cuZGlnaXRhbG9jZWFu
+LmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAODfNQYcxIZPfKT0
+w5vthNBQcRAMSTFEZ0l9HvhSXi7vJx/e8HVW2XIAcHl2PSSXffhOcyK/ZVaA5RH3
+2LIoIDfoj0HkMcUr7dhFu2UGDAcNz8mOQjVHsi9X9oVaRBzzXXjRnYje8IMbgHk3
+JnnIY9XMPlNFRLs93c1GYzs7bQuxcFQlB7N263M8BOm10EBNK3KrITwE8xUEt7U0
+m3wn+jYqDMuJ7pMZfa85D/JGLML6NsGI2l7kJ1YklJdFPC6ckB7Kg1yC5aVzp5nC
+ZEzqeX/43Lfak7UUAejlDRJ/EVPk7BSPe1ZZxZFuUZ/gs2hqWzuqSK4DFDqKSzQS
+QwV/09UCAwEAAaOCA74wggO6MB8GA1UdIwQYMBaAFD3TUKXWoK3u80pgCmXTIdT4
++NYPMB0GA1UdDgQWBBQFKOcODRFWzXiw3+lhFZLm3e6puDBqBgNVHREEYzBhghR3
+d3cuZGlnaXRhbG9jZWFuLmNvbYIUYXBpLmRpZ2l0YWxvY2Vhbi5jb22CFmNsb3Vk
+LmRpZ2l0YWxvY2Vhbi5jb22CG2RldmVsb3BlcnMuZGlnaXRhbG9jZWFuLmNvbTAO
+BgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMHUG
+A1UdHwRuMGwwNKAyoDCGLmh0dHA6Ly9jcmwzLmRpZ2ljZXJ0LmNvbS9zaGEyLWV2
+LXNlcnZlci1nMS5jcmwwNKAyoDCGLmh0dHA6Ly9jcmw0LmRpZ2ljZXJ0LmNvbS9z
+aGEyLWV2LXNlcnZlci1nMS5jcmwwSwYDVR0gBEQwQjA3BglghkgBhv1sAgEwKjAo
+BggrBgEFBQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAHBgVngQwB
+ATCBiAYIKwYBBQUHAQEEfDB6MCQGCCsGAQUFBzABhhhodHRwOi8vb2NzcC5kaWdp
+Y2VydC5jb20wUgYIKwYBBQUHMAKGRmh0dHA6Ly9jYWNlcnRzLmRpZ2ljZXJ0LmNv
+bS9EaWdpQ2VydFNIQTJFeHRlbmRlZFZhbGlkYXRpb25TZXJ2ZXJDQS5jcnQwDAYD
+VR0TAQH/BAIwADCCAX4GCisGAQQB1nkCBAIEggFuBIIBagFoAHcApLkJkLQYWBSH
+uxOizGdwCjw1mAT5G9+443fNDsgN3BAAAAFUybldEwAABAMASDBGAiEAmWSEX66L
+L6/eE5QvgbfW958a3EGiVm957ZM/Xs8Ju/YCIQDeKMDNvgbrdktRQRH2mXJasIt3
+A4WTg1KYpXQyWq6tMAB2AGj2mPgfZIK+OozuuSgdTPxxUV1nk9RE0QpnrLtPT/vE
+AAABVMm5XOIAAAQDAEcwRQIhANWN88tZIsYG7PFuCB3ScV37l/mWcRWnyQ6VNk1/
+daYcAiBjWovL7l1o+B74QbuMEWgIPwi6tfC88yASirlQvw0CmAB1AFYUBpov18Ls
+0/XhvUSyPsdGdrm8mRFcwO+UmFXWidDdAAABVMm5XbsAAAQDAEYwRAIgWilvLq0/
+VFTo6ckjGDqFkWMrPEX613To+YTAO2SrrRMCIDViZYkJExKogYaxF8ws0Riqc/9k
+IqJsJk2DSk5MW+N2MA0GCSqGSIb3DQEBCwUAA4IBAQC/kx3m+Rfe0kVrvh96H257
+6vxodiM7+AiRZUC7zeyRMEbYsz9cZRzzMBtvdAbaF0L6I6GKMfpqqkO09OC+qKdI
+zj9AtfIa+Zi2gKugMbAFyndsNWCfd13tjYEyq6FbbNKX/MNKKlW16aQetmYX6XK3
+Ln8ZruGbZVKPqNaequPos7L4CC6N91oqhka2ueA7P2olSOqADM76m7Rj1UzAzNZ8
+whH6ZMGjV4114IrWlRw2bYilefjyhU7gw497YrnhFkIBV2okwNJTl1A1gSyw8967
+fXFe4NWKG5whd0GCOrqCfyyblc2X/ejUeEyMnvfKIzI9PvGR8Nt7P4vYyXDv1HOs
+-----END CERTIFICATE-----
+subject=/businessCategory=Private Organization/1.3.6.1.4.1.311.60.2.1.3=US/1.3.6.1.4.1.311.60.2.1.2=Delaware/serialNumber=5118787/street=10th Floor/street=101 Avenue of the Americas/postalCode=10013/C=US/ST=New York/L=New York/O=Digital Ocean, Inc./CN=www.digitalocean.com
+issuer=/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 Extended Validation Server CA
+---
+No client certificate CA names sent
+---
+SSL handshake has read 4423 bytes and written 459 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES128-GCM-SHA256
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES128-GCM-SHA256
+    Session-ID: 241704C70D751558A2AF6F631243C9ED498A84EBB88903983A3F1F5BB0670BED
+    Session-ID-ctx: 
+    Master-Key: 4E7D4DB4B3390B1DF7D63168D86191A6BC56A7CA7844F12331E1AB71959F38CF02E772D68702C6E9E91DD2340BF4523A
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 64800 (seconds)
+    TLS session ticket:
+    0000 - 2e be 50 3a 24 94 7d d6-b6 7e f2 96 6b 24 0f d7   ..P:$.}..~..k$..
+    0010 - 24 23 f5 cd 8a 47 46 58-fa 19 e0 9d 2e e7 de e4   $#...GFX........
+    0020 - 05 26 cc a4 19 7c 13 64-8e 10 75 42 9b fd 54 bf   .&...|.d..uB..T.
+    0030 - b0 11 ab 22 16 17 c2 49-99 88 96 1f 78 57 3c ee   ..."...I....xW<.
+    0040 - a9 9e 37 eb 38 55 98 d1-a7 9d 1b c1 9f fe 09 e1   ..7.8U..........
+    0050 - 6c 0f 37 ee f8 d5 4d 78-ab 86 df 29 2d 0e c6 a2   l.7...Mx...)-...
+    0060 - d0 6c 38 2b 92 29 f2 6b-b9 41 0a d3 7c 35 a6 32   .l8+.).k.A..|5.2
+    0070 - 75 f9 87 53 4b 8c 34 35-79 d0 64 74 17 90 1c d6   u..SK.45y.dt....
+    0080 - 29 f6 7c 3e c4 c6 7a f9-6d 6b 95 bd de e7 3b 26   ).|>..z.mk....;&
+    0090 - 97 52 8d ae e6 89 dc c7-c5 b3 fc 9b 44 4b aa bd   .R..........DK..
+    00a0 - c6 a5 86 4e 70 e6 91 95-78 34 d9 60 3e 9b e2 16   ...Np...x4.`>...
+    00b0 - 99 1c 47 64 4d bd 29 f3-2e 5e d4 42 52 b0 16 c5   ..GdM.)..^.BR...
+    00c0 - 31 cb 37 df b5 74 78 f4-6d f5 e3 99 98 dd 9d 62   1.7..tx.m......b
+
+    Start Time: 1466505228
+    Timeout   : 300 (sec)
+    Verify return code: 20 (unable to get local issuer certificate)
+---
+DONE

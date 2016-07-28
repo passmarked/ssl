@@ -1,0 +1,79 @@
+CONNECTED(00000003)
+depth=0 C = US, ST = California, L = San Francisco, O = BadSSL, CN = *.badssl.com
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 C = US, ST = California, L = San Francisco, O = BadSSL, CN = *.badssl.com
+verify error:num=21:unable to verify the first certificate
+verify return:1
+---
+Certificate chain
+ 0 s:/C=US/ST=California/L=San Francisco/O=BadSSL/CN=*.badssl.com
+   i:/C=US/ST=California/L=San Francisco/O=BadSSL/CN=*.badssl.com
+-----BEGIN CERTIFICATE-----
+MIIDhjCCAm6gAwIBAgIJAJz01Wfo02AcMA0GCSqGSIb3DQEBCwUAMGIxCzAJBgNV
+BAYTAlVTMRMwEQYDVQQIDApDYWxpZm9ybmlhMRYwFAYDVQQHDA1TYW4gRnJhbmNp
+c2NvMQ8wDQYDVQQKDAZCYWRTU0wxFTATBgNVBAMMDCouYmFkc3NsLmNvbTAeFw0x
+NTA4MjgwMTIwNDZaFw0xNzA4MjcwMTIwNDZaMGIxCzAJBgNVBAYTAlVTMRMwEQYD
+VQQIDApDYWxpZm9ybmlhMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMQ8wDQYDVQQK
+DAZCYWRTU0wxFTATBgNVBAMMDCouYmFkc3NsLmNvbTCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBAMIE7PiM7gTCs9hQ1XBYzJMY61yoaEmwIrX5lZ6xKyx2
+PmzAS2BMTOqytMAPgLaw+XLJhgL5XEFdEyt/ccRLvOmULlA3pmccYYz2QULFRtMW
+hyefdOsKnRFSJiFzbIRMeVXk0WvoBj1IFVKtsyjbqv9u/2CVSndrOfEk0TG23U3A
+xPxTuW1CrbV8/q71FdIzSOciccfCFHpsKOo3St/qbLVytH5aohbcabFXRNsKEqve
+ww9HdFxBIuGa+RuT5q0iBikusbpJHAwnnqP7i/dAcgCskgjZjFeEU4EFy+b+a1SY
+QCeFxxC7c3DvaRhBB0VVfPlkPz0sw6l865MaTIbRyoUCAwEAAaM/MD0wCQYDVR0T
+BAIwADALBgNVHQ8EBAMCBeAwIwYDVR0RBBwwGoIMKi5iYWRzc2wuY29tggpiYWRz
+c2wuY29tMA0GCSqGSIb3DQEBCwUAA4IBAQAVIAuObGCbdR7kuSlbzSSFKEPiJVxK
+qQfLMmJ8MfcwOYj4sQ6J8w0jRjyoThw5Uuij7/ewCDCMydd2Ao5iNrrBNyYgc3xN
+Bg4cpHSQ2YeCA8RH6dLlSS6BK0aEvXf2268DFgGYtAxf+CJOprqodxd8mBEa5nYL
+wlA60SiT0kRY3ASSURtgMjNMKw492Gd5eF/YG94Y4t4UqNMok9YKtJs4HLx/uqXM
+u0H/lCumIUKqCcSwpaj1iwYpWeNT3llq+weQUGPV3rMLXZqaCXynz/cxzlmg1cEs
+UK4zrvqIB6ah1dFxiuXEBYMejxo6eFliMHG7nTv10jpiv4wgqi4q5VGk
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=/C=US/ST=California/L=San Francisco/O=BadSSL/CN=*.badssl.com
+issuer=/C=US/ST=California/L=San Francisco/O=BadSSL/CN=*.badssl.com
+---
+No client certificate CA names sent
+Peer signing digest: SHA1
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 1617 bytes and written 464 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES128-GCM-SHA256
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES128-GCM-SHA256
+    Session-ID: 62CD5B3D2220E3D97A92D00C0259A1137D5AFAE51D83F4F81F5D743005DF4999
+    Session-ID-ctx: 
+    Master-Key: 5704DFDDD86973C832FD8894897DAE5E92FE8DDF89BA6CF142E574794359D2590F2631437DD68B708E86BF14D482779D
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - 5c 63 e5 7f 34 e9 e6 c2-79 ae ef ed f7 5d f8 dd   \c..4...y....]..
+    0010 - a7 d5 26 78 97 16 8f 78-d3 77 6c 5d d7 0e 69 2f   ..&x...x.wl]..i/
+    0020 - 0f e6 2b 3a 12 f7 b2 3b-00 d7 c3 af 11 64 46 89   ..+:...;.....dF.
+    0030 - ef c2 91 5f 54 04 a4 3b-1f 4c 43 04 62 cc 36 7d   ..._T..;.LC.b.6}
+    0040 - 29 db fa 61 22 ca 11 fa-ed 80 8b fb 13 ff 75 fb   )..a".........u.
+    0050 - 59 0e 36 23 a8 b2 c3 34-a0 8d c9 5b 13 ea 47 d0   Y.6#...4...[..G.
+    0060 - 6a 5a 93 f0 c7 09 fb 85-80 fd 42 e8 a0 d6 9a f6   jZ........B.....
+    0070 - fe 87 7e c6 07 64 26 24-5b eb e2 de 6f 59 75 72   ..~..d&$[...oYur
+    0080 - 19 51 bb 20 4d 31 7f 71-9e bb 00 ff 5d ac 68 10   .Q. M1.q....].h.
+    0090 - 2b 66 08 5a be 95 91 ef-c6 83 38 d1 8e 1c 4e 99   +f.Z......8...N.
+    00a0 - 4a 7c 16 95 46 93 fe d1-23 8b 04 a8 c7 6a bc 33   J|..F...#....j.3
+    00b0 - 52 43 53 04 ea 09 47 a2-84 2c 51 0b b4 7f 14 9c   RCS...G..,Q.....
+    00c0 - 8e 75 f6 f3 f1 d1 b2 22-dc c9 b2 0a 57 a0 3e 2d   .u....."....W.>-
+
+    Start Time: 1466512200
+    Timeout   : 300 (sec)
+    Verify return code: 21 (unable to verify the first certificate)
+---

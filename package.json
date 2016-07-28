@@ -1,0 +1,45 @@
+{
+  "name": "@passmarked/ssl",
+  "version": "1.0.0",
+  "description": "Rules that relate to checking the SSL configuration of each individual resolved server from the domain to ensure locked down config with the broadest compatibility",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "test": "NODE_ENV=testing mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:passmarked/ssl.git"
+  },
+  "keywords": [
+    "ssl",
+    "passmarked",
+    "passmark",
+    "security",
+    "standards",
+    "test",
+    "suite",
+    "tls",
+    "sslv2",
+    "sslv3",
+    "poodle",
+    "heartbleed",
+    "crime",
+    "openssl"
+  ],
+  "author": "Passmarked <devops@passmarked.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "async": "^0.7.0",
+    "heartbleed-check": "^1.0.0",
+    "mocha": "^2.5.3",
+    "moment": "^2.13.0",
+    "passmarked": "*",
+    "pem": "^1.7.2",
+    "request": "^2.39.0",
+    "string": "^3.3.0",
+    "underscore": "^1.6.0"
+  }
+}

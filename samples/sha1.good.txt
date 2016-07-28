@@ -1,0 +1,144 @@
+CONNECTED(00000003)
+depth=3 C = SE, O = AddTrust AB, OU = AddTrust External TTP Network, CN = AddTrust External CA Root
+verify return:1
+depth=2 C = GB, ST = Greater Manchester, L = Salford, O = COMODO CA Limited, CN = COMODO ECC Certification Authority
+verify return:1
+depth=1 C = GB, ST = Greater Manchester, L = Salford, O = COMODO CA Limited, CN = COMODO ECC Domain Validation Secure Server CA 2
+verify return:1
+depth=0 OU = Domain Control Validated, OU = PositiveSSL Multi-Domain, CN = sni108821.cloudflaressl.com
+verify return:1
+---
+Certificate chain
+ 0 s:/OU=Domain Control Validated/OU=PositiveSSL Multi-Domain/CN=sni108821.cloudflaressl.com
+   i:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO ECC Domain Validation Secure Server CA 2
+-----BEGIN CERTIFICATE-----
+MIIGRDCCBemgAwIBAgIRAMhmSwlGUV2bFyf3POXNfDgwCgYIKoZIzj0EAwIwgZIx
+CzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNV
+BAcTB1NhbGZvcmQxGjAYBgNVBAoTEUNPTU9ETyBDQSBMaW1pdGVkMTgwNgYDVQQD
+Ey9DT01PRE8gRUNDIERvbWFpbiBWYWxpZGF0aW9uIFNlY3VyZSBTZXJ2ZXIgQ0Eg
+MjAeFw0xNjAzMjkwMDAwMDBaFw0xNjEwMDIyMzU5NTlaMGwxITAfBgNVBAsTGERv
+bWFpbiBDb250cm9sIFZhbGlkYXRlZDEhMB8GA1UECxMYUG9zaXRpdmVTU0wgTXVs
+dGktRG9tYWluMSQwIgYDVQQDExtzbmkxMDg4MjEuY2xvdWRmbGFyZXNzbC5jb20w
+WTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAASd0oe8DZvGhb8GH10Y/2PLrypRjREf
+DPoORNTdZjDZUkHSHF33TEgYON5+dcIzEatTS21G7Ura//ZFILaJxuWpo4IEQzCC
+BD8wHwYDVR0jBBgwFoAUQAlhZ/C8g3FP3hIILG/U1Ct2PZYwHQYDVR0OBBYEFEHk
+PDxq9aVh9f942iXSiAbyJgyuMA4GA1UdDwEB/wQEAwIHgDAMBgNVHRMBAf8EAjAA
+MB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjBPBgNVHSAESDBGMDoGCysG
+AQQBsjEBAgIHMCswKQYIKwYBBQUHAgEWHWh0dHBzOi8vc2VjdXJlLmNvbW9kby5j
+b20vQ1BTMAgGBmeBDAECATBWBgNVHR8ETzBNMEugSaBHhkVodHRwOi8vY3JsLmNv
+bW9kb2NhNC5jb20vQ09NT0RPRUNDRG9tYWluVmFsaWRhdGlvblNlY3VyZVNlcnZl
+ckNBMi5jcmwwgYgGCCsGAQUFBwEBBHwwejBRBggrBgEFBQcwAoZFaHR0cDovL2Ny
+dC5jb21vZG9jYTQuY29tL0NPTU9ET0VDQ0RvbWFpblZhbGlkYXRpb25TZWN1cmVT
+ZXJ2ZXJDQTIuY3J0MCUGCCsGAQUFBzABhhlodHRwOi8vb2NzcC5jb21vZG9jYTQu
+Y29tMIICigYDVR0RBIICgTCCAn2CG3NuaTEwODgyMS5jbG91ZGZsYXJlc3NsLmNv
+bYIgKi5hbnRpcXVlZ2xhc3N2aW50YWdlYm90dGxlcy5jb22CDCouYXRsYXNkZi5t
+eIIOKi5mbm9jYWxscy5jb22CDSouZm5vY2FsbHMuaW6CDyouaGVhdnltZWRpYS5p
+b4IWKi5ob3RzaG90bWFuYWdlci5jby56YYIVKi5ob3RzaG90c2VydmVyLmNvLnph
+gg4qLmludGFrYS5jby56YYIKKi5pby5jby56YYIPKi5uc2ZhZnJpY2EuY29tghEq
+Lm5zZnNwZWNwb3J0LmNvbYIQKi5wYXNzbWFya2VkLmNvbYIIKi5yYWYuZ2eCEiou
+c2FsZXNvZmluZGlhLmNvbYIYKi5zYW1hcnBhbmZvdW5kYXRpb24ub3JnghAqLnN0
+b3JtZXJzdHYuY29tghQqLnRlb3RpaHVhY2FuLnRyYXZlbIIeYW50aXF1ZWdsYXNz
+dmludGFnZWJvdHRsZXMuY29tggphdGxhc2RmLm14ggxmbm9jYWxscy5jb22CC2Zu
+b2NhbGxzLmlugg1oZWF2eW1lZGlhLmlvghRob3RzaG90bWFuYWdlci5jby56YYIT
+aG90c2hvdHNlcnZlci5jby56YYIMaW50YWthLmNvLnphgghpby5jby56YYINbnNm
+YWZyaWNhLmNvbYIPbnNmc3BlY3BvcnQuY29tgg5wYXNzbWFya2VkLmNvbYIGcmFm
+LmdnghBzYWxlc29maW5kaWEuY29tghZzYW1hcnBhbmZvdW5kYXRpb24ub3Jngg5z
+dG9ybWVyc3R2LmNvbYISdGVvdGlodWFjYW4udHJhdmVsMAoGCCqGSM49BAMCA0kA
+MEYCIQCbMiXi0AylkrEPgsSM0/9t/OovtjARvAp0p3xeu/7m2wIhAItGYZ5Il4Vh
+M0cqOE3tnLsc6Npx0MwocdPu2zRVTVbg
+-----END CERTIFICATE-----
+ 1 s:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO ECC Domain Validation Secure Server CA 2
+   i:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO ECC Certification Authority
+-----BEGIN CERTIFICATE-----
+MIIDnzCCAyWgAwIBAgIQWyXOaQfEJlVm0zkMmalUrTAKBggqhkjOPQQDAzCBhTEL
+MAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UE
+BxMHU2FsZm9yZDEaMBgGA1UEChMRQ09NT0RPIENBIExpbWl0ZWQxKzApBgNVBAMT
+IkNPTU9ETyBFQ0MgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTQwOTI1MDAw
+MDAwWhcNMjkwOTI0MjM1OTU5WjCBkjELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdy
+ZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEaMBgGA1UEChMRQ09N
+T0RPIENBIExpbWl0ZWQxODA2BgNVBAMTL0NPTU9ETyBFQ0MgRG9tYWluIFZhbGlk
+YXRpb24gU2VjdXJlIFNlcnZlciBDQSAyMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcD
+QgAEAjgZgTrJaYRwWQKOqIofMN+83gP8eR06JSxrQSEYgur5PkrkM8wSzypD/A7y
+ZADA4SVQgiTNtkk4DyVHkUikraOCAWYwggFiMB8GA1UdIwQYMBaAFHVxpxlIGbyd
+nepBR9+UxEh3mdN5MB0GA1UdDgQWBBRACWFn8LyDcU/eEggsb9TUK3Y9ljAOBgNV
+HQ8BAf8EBAMCAYYwEgYDVR0TAQH/BAgwBgEB/wIBADAdBgNVHSUEFjAUBggrBgEF
+BQcDAQYIKwYBBQUHAwIwGwYDVR0gBBQwEjAGBgRVHSAAMAgGBmeBDAECATBMBgNV
+HR8ERTBDMEGgP6A9hjtodHRwOi8vY3JsLmNvbW9kb2NhLmNvbS9DT01PRE9FQ0ND
+ZXJ0aWZpY2F0aW9uQXV0aG9yaXR5LmNybDByBggrBgEFBQcBAQRmMGQwOwYIKwYB
+BQUHMAKGL2h0dHA6Ly9jcnQuY29tb2RvY2EuY29tL0NPTU9ET0VDQ0FkZFRydXN0
+Q0EuY3J0MCUGCCsGAQUFBzABhhlodHRwOi8vb2NzcC5jb21vZG9jYTQuY29tMAoG
+CCqGSM49BAMDA2gAMGUCMQCsaEclgBNPE1bAojcJl1pQxOfttGHLKIoKETKm4nHf
+EQGJbwd6IGZrGNC5LkP3Um8CMBKFfI4TZpIEuppFCZRKMGHRSdxv6+ctyYnPHmp8
+7IXOMCVZuoFwNLg0f+cB0eLLUg==
+-----END CERTIFICATE-----
+ 2 s:/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO ECC Certification Authority
+   i:/C=SE/O=AddTrust AB/OU=AddTrust External TTP Network/CN=AddTrust External CA Root
+-----BEGIN CERTIFICATE-----
+MIID0DCCArigAwIBAgIQQ1ICP/qokB8Tn+P05cFETjANBgkqhkiG9w0BAQwFADBv
+MQswCQYDVQQGEwJTRTEUMBIGA1UEChMLQWRkVHJ1c3QgQUIxJjAkBgNVBAsTHUFk
+ZFRydXN0IEV4dGVybmFsIFRUUCBOZXR3b3JrMSIwIAYDVQQDExlBZGRUcnVzdCBF
+eHRlcm5hbCBDQSBSb290MB4XDTAwMDUzMDEwNDgzOFoXDTIwMDUzMDEwNDgzOFow
+gYUxCzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAO
+BgNVBAcTB1NhbGZvcmQxGjAYBgNVBAoTEUNPTU9ETyBDQSBMaW1pdGVkMSswKQYD
+VQQDEyJDT01PRE8gRUNDIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MHYwEAYHKoZI
+zj0CAQYFK4EEACIDYgAEA0d7L3XJghWF+3XkkRbUq2KZ9T5SCwbOQQB/l+EKJDwd
+AQTuPdKNCZcM4HXk+vt3iir1A2BLNosWIxatCXH0SvQoULT+iBxuP2wvLwlZW6Vb
+CzOZ4sM9iflqLO+y0wbpo4H+MIH7MB8GA1UdIwQYMBaAFK29mHo0tCb3+sQmVO8D
+veAky1QaMB0GA1UdDgQWBBR1cacZSBm8nZ3qQUfflMRId5nTeTAOBgNVHQ8BAf8E
+BAMCAYYwDwYDVR0TAQH/BAUwAwEB/zARBgNVHSAECjAIMAYGBFUdIAAwSQYDVR0f
+BEIwQDA+oDygOoY4aHR0cDovL2NybC50cnVzdC1wcm92aWRlci5jb20vQWRkVHJ1
+c3RFeHRlcm5hbENBUm9vdC5jcmwwOgYIKwYBBQUHAQEELjAsMCoGCCsGAQUFBzAB
+hh5odHRwOi8vb2NzcC50cnVzdC1wcm92aWRlci5jb20wDQYJKoZIhvcNAQEMBQAD
+ggEBAB3H+i5AtlwFSw+8VTYBWOBTBT1k+6zZpTi4pyE7r5VbvkjI00PUIWxB7Qkt
+nHMAcZyuIXN+/46NuY5YkI78jG12yAA6nyCmLX3MF/3NmJYyCRrJZfwE67SaCnjl
+lztSjxLCdJcBns/hbWjYk7mcJPuWJ0gBnOqUP3CYQbNzUTcp6PYBerknuCRR2RFo
+1KaFpzanpZa6gPim/a5thCCuNXZzQg+HCezF3OeTAyIal+6ailFhp5cmHunudVEI
+kAWvL54TnJM/ev/m6+loeYyv4Lb67psSE/5FjNJ80zXrIRKT/mZ1JioVhCb3ZsnL
+jbsJQdQYr7GzEPUQyp2aDrV1aug=
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=/OU=Domain Control Validated/OU=PositiveSSL Multi-Domain/CN=sni108821.cloudflaressl.com
+issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO ECC Domain Validation Secure Server CA 2
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Server Temp Key: ECDH, P-256, 256 bits
+---
+SSL handshake has read 4031 bytes and written 450 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-ECDSA-AES128-GCM-SHA256
+Server public key is 256 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-ECDSA-AES128-GCM-SHA256
+    Session-ID: 55DF7CCEC6939CFFB467F6E0CDCACBD6B896E6C82E20F3B8F8DAA1AD8D92DB0C
+    Session-ID-ctx: 
+    Master-Key: 3F4332E80BA748D49F388FBCDFFDF8BB413593AC7DE4F17F20DB5DFB09A2B82FE7C2350704475211C70FFF47BFEC4DB0
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 64800 (seconds)
+    TLS session ticket:
+    0000 - ae f9 22 6a d4 56 85 fc-d9 ac db 25 e2 a3 1b 02   .."j.V.....%....
+    0010 - ac 27 fc b7 32 28 f0 23-b3 3a 31 f6 3c bf 85 07   .'..2(.#.:1.<...
+    0020 - ba 4b b8 9a 56 db 9a 7c-54 d9 c1 10 33 87 6d 09   .K..V..|T...3.m.
+    0030 - 5b ba 42 85 3b 25 19 f7-84 77 b3 45 91 c4 3e a8   [.B.;%...w.E..>.
+    0040 - 09 43 16 36 a5 4f 85 1b-eb c0 19 f5 13 f9 e3 a0   .C.6.O..........
+    0050 - f8 a7 7c 8b 84 2f e5 7a-18 ca 65 4f 2e ca 38 4c   ..|../.z..eO..8L
+    0060 - 05 08 2c fe dc 47 1e c8-52 02 b5 9b 84 23 d5 a6   ..,..G..R....#..
+    0070 - 5f 58 21 52 bb 1c 1b f9-c6 4d 20 69 b7 d1 29 5b   _X!R.....M i..)[
+    0080 - cc 10 af 24 c7 1b f4 b0-bf 7d 69 68 da 7b 8c 75   ...$.....}ih.{.u
+    0090 - 2b 39 8e 8c 45 66 d2 5d-38 fd cc dc fe ed b7 2e   +9..Ef.]8.......
+    00a0 - 1f 35 d0 cd 62 02 6a 1f-03 7d 64 08 49 f9 c4 b7   .5..b.j..}d.I...
+    00b0 - b1 28 e4 7f 0b 0a 9b 44-5d 92 77 c6 88 f3 a3 47   .(.....D].w....G
+
+    Start Time: 1466516470
+    Timeout   : 300 (sec)
+    Verify return code: 0 (ok)
+---

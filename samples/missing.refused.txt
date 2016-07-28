@@ -1,0 +1,2 @@
+connect: Connection refused
+connect:errno=111
