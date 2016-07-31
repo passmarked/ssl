@@ -1,11 +1,14 @@
 before_install:
   - sudo apt-get install -y wget openssl libssl-dev coreutils
-  - sudo apt-get install -y build-essential
-  - wget -O openssl https://package.passmarked.com/openssl/builds/openssl-x86-1.0.2h.bin
-  - sudo mkdir -p /usr/local/ssl/bin/
-  - sudo cp openssl /usr/local/ssl/bin/openssl
-  - sudo chmod a+x /usr/local/ssl/bin/openssl
-  - sudo apt-get install -y ca-certificates
+  - sudo apt-get install -y build-essential ca-certificates
+  - wget -O /tmp/openssl-1.0.2h.tar.gz https://www.openssl.org/source/openssl-1.0.2h.tar.gz
+  - cd /tmp/ && tar -xf /tmp/openssl-1.0.2h.tar.gz
+  - rm /tmp/openssl-1.0.2h.tar.gz
+  - cd /tmp/openssl-1.0.2h && ./config
+  - cd /tmp/openssl-1.0.2h && make depend
+  - cd /tmp/openssl-1.0.2h && make
+  - cd /tmp/openssl-1.0.2h && sudo make install
+  - rm -R /tmp/openssl-1.0.2h
 language: node_js
 env:
   - CXX=g++-4.8
