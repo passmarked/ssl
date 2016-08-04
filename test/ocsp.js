@@ -2,7 +2,7 @@
 const assert        = require('assert');
 const _             = require('underscore');
 const passmarked    = require('passmarked');
-const testFunc      = require('../lib/rules/status');
+const testFunc      = require('../lib/checks/status');
 const Constants     = require('../lib/constants');
 const moment        = require('moment');
 const fs            = require('fs');
@@ -21,13 +21,18 @@ describe('OCSP', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return null;
+        getPeerCertificate: function() {
 
-      }
+          return null;
+
+        }
+
+      },
+      address:  '192.168.0.1'
 
     }, function(err) {
 
@@ -60,13 +65,18 @@ describe('OCSP', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return null;
+        getPeerCertificate: function() {
 
-      }
+          return null;
+
+        }
+
+      },
+      address:  '192.168.0.1'
 
     }, function(err) {
 
@@ -97,13 +107,18 @@ describe('OCSP', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return null;
+        getPeerCertificate: function() {
 
-      }
+          return null;
+
+        }
+
+      },
+      address:  '192.168.0.1'
 
     }, function(err) {
 

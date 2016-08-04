@@ -2,7 +2,7 @@
 const assert        = require('assert');
 const _             = require('underscore');
 const passmarked    = require('passmarked');
-const testFunc      = require('../lib/rules/recommend');
+const testFunc      = require('../lib/rules/recommended');
 const Constants     = require('../lib/constants');
 const moment        = require('moment');
 const fs            = require('fs');
@@ -20,15 +20,7 @@ describe('recommend', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
-
-      getPeerCertificate: function() {
-
-        return null;
-
-      }
-
-    }, function(err) {
+    testFunc(payload, function(err) {
 
       // did we get a error
       if(err) assert.fail('Got a JS error from the rule');
@@ -58,15 +50,7 @@ describe('recommend', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
-
-      getPeerCertificate: function() {
-
-        return null;
-
-      }
-
-    }, function(err) {
+    testFunc(payload, function(err) {
 
       // did we get a error
       if(err) assert.fail('Got a JS error from the rule');
@@ -75,10 +59,9 @@ describe('recommend', function() {
       var rules = payload.getRules();
 
       // check for a error
-      var rule = _.find(rules, function(rule) { return rule.key == 'https.enabled' });
+      var rule = _.find(rules, function(rule) { return rule.key == 'enabled' });
 
       if(!rule) assert.fail('Was expecting a error');
-      if(rule.type != 'notice') assert.fail('The rule was expected to be a notice');
 
       // done
       done();
