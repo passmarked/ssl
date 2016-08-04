@@ -15,6 +15,7 @@ The module firstly does a resolve on the DNS address (or just directly uses the 
 The rules checked in this module are:
 
 * **anonymous** - Server has ciphers ciphers enabled
+* **connect** - Returned when the connection to the server over TLS/SSL could not be opened
 * **cipher** - Server has a known weak cipher enabled, any of the following ciphers will raise this issue: **NULL**, **EXPORT**, **LOW**, **3DES**, **MD5**, **RSK** or **RC4**
 * **compression** - Server has TLS compression enabled which also leads to a vulnerability for the OpenSSL [CRIME](https://en.wikipedia.org/wiki/CRIME) attack
 * **expire** - The certificate is shorter than a month away from expiring.
@@ -24,9 +25,9 @@ The rules checked in this module are:
 * **host** - The certificate presented by the server did not have the host requested featured, leading to a hostname mismatch error.
 * **missing** - The server did not supply a certificate, this normally indicates that no certificate was configured although SSL is being offered.
 * **poodle** - Vulnerability to the [POODLE](https://en.wikipedia.org/wiki/POODLE) attack was found
-* **https.enabled** - If the given url is not HTTPS, the issue is raised to recommend switching to SSL for the security of useres.
+* **enabled** - If the given url is not HTTPS, the issue is raised to recommend switching to SSL for the security of useres.
 * **renegotiation.client** - Client Renegotiation is enabled but was expecting it to be disabled to lock the server down correctly.
-* **sha1** - The returned certificate makes use of SHA1 hashing which is obsolete after 2016, browsers will be giving out warnings from October 2016 about these certificates that are signed with SHA1.
+* **signature** - The returned certificate makes use of SHA1 hashing which is obsolete after 2016, browsers will be giving out warnings from October 2016 about these certificates that are signed with SHA1.
 * **ssl2** - SSLv2 was detected on the server, this should be disabled as fast as possible.
 * **ssl3** - SSLv3 was detected on the server, this should be disabled as fast as possible.
 * **sni** - SNI is not enabled, meaning the server can only serve a single website.
@@ -37,18 +38,12 @@ The rules checked in this module are:
 * **tls1.2** - TLSv1.2 was not detected, should be enabled to ensure compatibility with the largest secured user base.
 * **verify** - Verification of the certificate with common known root certificated failed, most probably could indicate a privately signed key.
 * **chain.missing** - Missing intermediate certificates detected from the chain returned by the server, the daa returned contains the full chain as expected with all the needed certificates.
-* **chain.weak** - Certificates that were expected in the chain contains certificates using a weaker signature hash.
-* **chain.root** - The certificate chain returned from the server contains a root certificate, which is according to how PKI is designed will be wasting a few bytes for every request. These should be removed.
+* **chain.signature** - Certificates that were expected in the chain contains certificates using a weaker signature hash.
+* **chain.trusted** - The certificate trusted returned from the server contains a root certificate, which is according to how PKI is designed will be wasting a few bytes for every request. These should be removed.
 * **chain.order** - Order of the certifiate chain provided is wrong
 * **chain.verify** - Unable to verify a intermediate certificate or if any of the certificates have been revoked.
 * **chain.unexpected** - Unable to verify a intermediate certificate or if any of the certificates have been revoked.
-* **android** - The configured settings on the server might cause problems for Android devices connecting to the server over HTTPS.
-* **ios** - The configured settings on the server might cause problems for IOS devices connecting to the server over HTTPS.
-* **windows** - The configured settings on the server might cause problems for Windows devices connecting to the server over HTTPS.
-* **linux** - The configured settings on the server might cause problems for Linux devices connecting to the server over HTTPS.
-* **macos** - The configured settings on the server might cause problems for MacOS devices connecting to the server over HTTPS.
-* **opera** - The configured settings on the server might cause problems for Opera devices connecting to the server over HTTPS.
-* **blackberry** - The configured settings on the server might cause problems for Opera devices connecting to the server over HTTPS.
+* **compatibility** - Returned if the configured settings on the server do not (at least) match the "Intermediate" setting from the [Mozilla SSL recommendations](https://wiki.mozilla.org/Security/Server_Side_TLS). The Intermediate level will provide the most security (with a few draw backs) it can to support the biggest list of available clients all the way back to `Firefox 1, Chrome 1, IE 7, Opera 5, Safari 1, Windows XP IE8, Android 2.3, Java 7`.
 
 ## Running
 

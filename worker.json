@@ -1,5 +1,5 @@
 {
-  "key": "security.ssl",
-  "crawl": true,
-  "track": true
+  "key":    "security.ssl",
+  "crawl":  true,
+  "track":  true
 }

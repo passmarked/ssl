@@ -2,7 +2,7 @@
 const assert        = require('assert');
 const _             = require('underscore');
 const passmarked    = require('passmarked');
-const testFunc      = require('../lib/rules/expire');
+const testFunc      = require('../lib/checks/expire');
 const Constants     = require('../lib/constants');
 const moment        = require('moment');
 
@@ -18,13 +18,18 @@ describe('expire', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return null;
+        getPeerCertificate: function() {
 
-      }
+          return null;
+
+        }
+
+      },
+      address:  '192.168.0.1'
 
     }, function(err) {
 
@@ -54,13 +59,18 @@ describe('expire', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return {};
+          getPeerCertificate: function() {
 
-      }
+          return { subject: {} };
+
+        }
+
+      },
+      address: '192.168.0.1'
 
     }, function(err) {
 
@@ -90,13 +100,18 @@ describe('expire', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return { subject: {} };
+          getPeerCertificate: function() {
 
-      }
+          return { subject: {} };
+
+        }
+
+      },
+      address: '192.168.0.1'
 
     }, function(err) {
 
@@ -119,20 +134,25 @@ describe('expire', function() {
   // handle the error output
   it('Should return a error if the certificate has expired', function(done) {
 
-    payload = passmarked.createPayload({
+    var payload = passmarked.createPayload({
 
         url: 'https://example.com/'
 
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return require('../samples/certificate.expire.json');
+        getPeerCertificate: function() {
 
-      }
+          return require('../samples/certificate.expire.json');
+
+        }
+
+      },
+      address: '192.168.0.1'
 
     }, function(err) {
 
@@ -158,25 +178,30 @@ describe('expire', function() {
   // handle the error output
   it('Should show that certificate expires today in message', function(done) {
 
-    payload = passmarked.createPayload({
+    var payload = passmarked.createPayload({
 
         url: 'https://example.com/'
 
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return _.extend(require('../samples/certificate.expire.json'), {
+        getPeerCertificate: function() {
 
-          valid_from: moment().subtract(256, 'days').format(Constants.TLS_DATE_FORMAT),
-          valid_to:   moment().format(Constants.TLS_DATE_FORMAT)
+          return _.extend(require('../samples/certificate.expire.json'), {
 
-        });
+            valid_from: moment().subtract(256, 'days').format(Constants.TLS_DATE_FORMAT),
+            valid_to:   moment().format(Constants.TLS_DATE_FORMAT)
 
-      }
+          });
+
+        }
+
+      },
+      address: '192.168.0.1'
 
     }, function(err) {
 
@@ -206,25 +231,30 @@ describe('expire', function() {
   // handle the error output
   it('Should return a warning if the given certificate expires in a less than a month', function(done) {
 
-    payload = passmarked.createPayload({
+    var payload = passmarked.createPayload({
 
         url: 'https://example.com/'
 
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return _.extend(require('../samples/certificate.expire.json'), {
+        getPeerCertificate: function() {
 
-          valid_from: moment().subtract(200, 'days').format(Constants.TLS_DATE_FORMAT),
-          valid_to:   moment().add(20, 'days').format(Constants.TLS_DATE_FORMAT)
+          return _.extend(require('../samples/certificate.expire.json'), {
 
-        });
+            valid_from: moment().subtract(200, 'days').format(Constants.TLS_DATE_FORMAT),
+            valid_to:   moment().add(20, 'days').format(Constants.TLS_DATE_FORMAT)
 
-      }
+          });
+
+        }
+
+      },
+      address: '192.168.0.1'
 
     }, function(err) {
 
@@ -251,25 +281,30 @@ describe('expire', function() {
   // handle the error output
   it('Should return a error if the given certificate expires in a less than a 2 weeks', function(done) {
 
-    payload = passmarked.createPayload({
+    var payload = passmarked.createPayload({
 
         url: 'https://example.com/'
 
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return _.extend(require('../samples/certificate.expire.json'), {
+        getPeerCertificate: function() {
 
-          valid_from: moment().subtract(200, 'days').format(Constants.TLS_DATE_FORMAT),
-          valid_to:   moment().add(4, 'days').format(Constants.TLS_DATE_FORMAT)
+          return _.extend(require('../samples/certificate.expire.json'), {
 
-        });
+            valid_from: moment().subtract(200, 'days').format(Constants.TLS_DATE_FORMAT),
+            valid_to:   moment().add(4, 'days').format(Constants.TLS_DATE_FORMAT)
 
-      }
+          });
+
+        }
+
+      },
+      address: '192.168.0.1'
 
     }, function(err) {
 
@@ -296,25 +331,30 @@ describe('expire', function() {
   // handle the error output
   it('Should not return a error if the given certificate is still valid and more than a month from expire', function(done) {
 
-    payload = passmarked.createPayload({
+    var payload = passmarked.createPayload({
 
         url: 'https://example.com/'
 
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return _.extend(require('../samples/certificate.expire.json'), {
+        getPeerCertificate: function() {
 
-          valid_from: moment().subtract(100, 'days').format(Constants.TLS_DATE_FORMAT),
-          valid_to:   moment().add(200, 'days').format(Constants.TLS_DATE_FORMAT)
+          return _.extend(require('../samples/certificate.expire.json'), {
 
-        });
+            valid_from: moment().subtract(100, 'days').format(Constants.TLS_DATE_FORMAT),
+            valid_to:   moment().add(200, 'days').format(Constants.TLS_DATE_FORMAT)
 
-      }
+          });
+
+        }
+
+      },
+      address: '192.168.0.1'
 
     }, function(err) {
 

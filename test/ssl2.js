@@ -2,7 +2,7 @@
 const assert        = require('assert');
 const _             = require('underscore');
 const passmarked    = require('passmarked');
-const testFunc      = require('../lib/rules/sslv2');
+const testFunc      = require('../lib/checks/sslv2');
 const Constants     = require('../lib/constants');
 const moment        = require('moment');
 const fs            = require('fs');
@@ -21,13 +21,18 @@ describe('sslv2', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return null;
+        getPeerCertificate: function() {
 
-      }
+          return null;
+
+        }
+
+      },
+      address:  '192.168.0.1'
 
     }, function(err) {
 
@@ -58,13 +63,18 @@ describe('sslv2', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return null;
+        getPeerCertificate: function() {
 
-      }
+          return null;
+
+        }
+
+      },
+      address:  '192.168.0.1'
 
     }, function(err) {
 
@@ -95,13 +105,18 @@ describe('sslv2', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return null;
+        getPeerCertificate: function() {
 
-      }
+          return null;
+
+        }
+
+      },
+      address:  '192.168.0.1'
 
     }, function(err) {
 

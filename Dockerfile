@@ -9,7 +9,7 @@ RUN apt-get install -y wget openssl libssl-dev
 RUN apt-get install -y build-essential 
 
 # upgrade to a much newer and specific version of ssl
-RUN wget -O /tmp/openssl-1.0.2h.tar.gz https://www.openssl.org/source/openssl-1.0.2h.tar.gz
+RUN wget -O /tmp/openssl-1.0.2h.tar.gz https://package.passmarked.com/openssl/src/openssl-1.0.2h.tar.gz
 RUN cd /tmp/ && tar -xf /tmp/openssl-1.0.2h.tar.gz
 RUN rm /tmp/openssl-1.0.2h.tar.gz
 RUN cd /tmp/openssl-1.0.2h && ./config

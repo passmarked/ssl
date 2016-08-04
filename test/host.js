@@ -2,7 +2,7 @@
 const assert        = require('assert');
 const _             = require('underscore');
 const passmarked    = require('passmarked');
-const testFunc      = require('../lib/rules/host');
+const testFunc      = require('../lib/checks/host');
 const Constants     = require('../lib/constants');
 const moment        = require('moment');
 
@@ -18,13 +18,18 @@ describe('host', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return null;
+        getPeerCertificate: function() {
 
-      }
+          return null;
+
+        }
+
+      },
+      address:  '192.168.0.1'
 
     }, function(err) {
 
@@ -54,7 +59,7 @@ describe('host', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
       getPeerCertificate: function() {
 
@@ -90,24 +95,29 @@ describe('host', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return _.extend(require('../samples/certificate.host.json'), {
+        getPeerCertificate: function() {
 
-          valid_from:     moment().subtract(1, 'years').format(Constants.TLS_DATE_FORMAT),
-          valid_to:       moment().add(1, 'years').format(Constants.TLS_DATE_FORMAT),
-          subjectaltname: [
+          return _.extend(require('../samples/certificate.host.json'), {
 
-            'DNS:example.com', 'DNS:www.example.com'
+            valid_from:     moment().subtract(1, 'years').format(Constants.TLS_DATE_FORMAT),
+            valid_to:       moment().add(1, 'years').format(Constants.TLS_DATE_FORMAT),
+            subjectaltname: [
 
-          ].join(','),
-          commonName:     'example.com'
+              'DNS:example.com', 'DNS:www.example.com'
 
-        });
+            ].join(','),
+            commonName:     'example.com'
 
-      }
+          });
+
+        }
+
+      },
+      address: '192.168.0.1'
 
     }, function(err) {
 
@@ -140,23 +150,27 @@ describe('host', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return _.extend(require('../samples/certificate.host.json'), {
+        getPeerCertificate: function() {
 
-          valid_from:     moment().subtract(1, 'years').format(Constants.TLS_DATE_FORMAT),
-          valid_to:       moment().add(1, 'years').format(Constants.TLS_DATE_FORMAT),
-          subjectaltname: [
+          return _.extend(require('../samples/certificate.host.json'), {
 
-            'DNS:example.com', 'DNS:www.example.com'
+            valid_from:     moment().subtract(1, 'years').format(Constants.TLS_DATE_FORMAT),
+            valid_to:       moment().add(1, 'years').format(Constants.TLS_DATE_FORMAT),
+            subjectaltname: [
 
-          ].join(','),
-          commonName:     'example.com'
+              'DNS:example.com', 'DNS:www.example.com'
 
-        });
+            ].join(','),
+            commonName:     'example.com'
 
+          });
+
+        }
+        
       }
 
     }, function(err) {
@@ -190,24 +204,29 @@ describe('host', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return _.extend(require('../samples/certificate.host.json'), {
+        getPeerCertificate: function() {
 
-          valid_from:     moment().subtract(1, 'years').format(Constants.TLS_DATE_FORMAT),
-          valid_to:       moment().add(1, 'years').format(Constants.TLS_DATE_FORMAT),
-          subjectaltname: [
+          return _.extend(require('../samples/certificate.host.json'), {
 
-            'DNS:example.com', 'DNS:*.example.com'
+            valid_from:     moment().subtract(1, 'years').format(Constants.TLS_DATE_FORMAT),
+            valid_to:       moment().add(1, 'years').format(Constants.TLS_DATE_FORMAT),
+            subjectaltname: [
 
-          ].join(','),
-          commonName:     'example.com'
+              'DNS:example.com', 'DNS:*.example.com'
 
-        });
+            ].join(','),
+            commonName:     'example.com'
 
-      }
+          });
+
+        }
+
+      },
+      address: '192.168.0.1'
 
     }, function(err) {
 
@@ -240,24 +259,29 @@ describe('host', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return _.extend(require('../samples/certificate.host.json'), {
+          getPeerCertificate: function() {
 
-          valid_from:     moment().subtract(1, 'years').format(Constants.TLS_DATE_FORMAT),
-          valid_to:       moment().add(1, 'years').format(Constants.TLS_DATE_FORMAT),
-          subjectaltname: [
+          return _.extend(require('../samples/certificate.host.json'), {
 
-            'DNS:example.com', 'DNS:*.example.com'
+            valid_from:     moment().subtract(1, 'years').format(Constants.TLS_DATE_FORMAT),
+            valid_to:       moment().add(1, 'years').format(Constants.TLS_DATE_FORMAT),
+            subjectaltname: [
 
-          ].join(','),
-          commonName:     'example.com'
+              'DNS:example.com', 'DNS:*.example.com'
 
-        });
+            ].join(','),
+            commonName:     'example.com'
 
-      }
+          });
+
+        }
+
+      },
+      address: '192.168.0.1'
 
     }, function(err) {
 
@@ -290,24 +314,29 @@ describe('host', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return _.extend(require('../samples/certificate.host.json'), {
+          getPeerCertificate: function() {
 
-          valid_from:     moment().subtract(1, 'years').format(Constants.TLS_DATE_FORMAT),
-          valid_to:       moment().add(1, 'years').format(Constants.TLS_DATE_FORMAT),
-          subjectaltname: [
+          return _.extend(require('../samples/certificate.host.json'), {
 
-            'DNS:example.com', 'DNS:*.example.com'
+            valid_from:     moment().subtract(1, 'years').format(Constants.TLS_DATE_FORMAT),
+            valid_to:       moment().add(1, 'years').format(Constants.TLS_DATE_FORMAT),
+            subjectaltname: [
 
-          ].join(','),
-          commonName:     'example.com'
+              'DNS:example.com', 'DNS:*.example.com'
 
-        });
+            ].join(','),
+            commonName:     'example.com'
 
-      }
+          });
+
+        }
+
+      },
+      address: '192.168.0.1'
 
     }, function(err) {
 
@@ -340,24 +369,29 @@ describe('host', function() {
       }, {}, null);
 
     // execute the items
-    testFunc(payload, '192.168.0.1', {
+    testFunc(payload, {
 
-      getPeerCertificate: function() {
+      client: {
 
-        return _.extend(require('../samples/certificate.host.json'), {
+          getPeerCertificate: function() {
 
-          valid_from:     moment().subtract(1, 'years').format(Constants.TLS_DATE_FORMAT),
-          valid_to:       moment().add(1, 'years').format(Constants.TLS_DATE_FORMAT),
-          subjectaltname: [
+          return _.extend(require('../samples/certificate.host.json'), {
 
-            'DNS:example.com', 'DNS:*.example.com'
+            valid_from:     moment().subtract(1, 'years').format(Constants.TLS_DATE_FORMAT),
+            valid_to:       moment().add(1, 'years').format(Constants.TLS_DATE_FORMAT),
+            subjectaltname: [
 
-          ].join(','),
-          commonName:     'example.com'
+              'DNS:example.com', 'DNS:*.example.com'
 
-        });
+            ].join(','),
+            commonName:     'example.com'
 
-      }
+          });
+
+        }
+
+      },
+      address: '192.168.0.1'
 
     }, function(err) {
 
