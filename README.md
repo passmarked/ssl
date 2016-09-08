@@ -18,6 +18,7 @@ The rules checked in this module are:
 * **connect** - Returned when the connection to the server over TLS/SSL could not be opened
 * **cipher** - Server has a known weak cipher enabled, any of the following ciphers will raise this issue: **NULL**, **EXPORT**, **LOW**, **3DES**, **MD5**, **RSK** or **RC4**
 * **compression** - Server has TLS compression enabled which also leads to a vulnerability for the OpenSSL [CRIME](https://en.wikipedia.org/wiki/CRIME) attack
+* **crime** - Vulnerability to the [CRIME](https://en.wikipedia.org/wiki/CRIME) attack was found as TLS Compression was enabled
 * **expire** - The certificate is shorter than a month away from expiring.
 * **expired** - The certificate presented by the server has expired and is not valid anymore
 * **freak** - The server has the **EXPORT** cipher enabled which leads to a vulnerability for the [FREAK](https://freakattack.com/) attack.
@@ -32,6 +33,7 @@ The rules checked in this module are:
 * **ssl3** - SSLv3 was detected on the server, this should be disabled as fast as possible.
 * **sni** - SNI is not enabled, meaning the server can only serve a single website.
 * **oscp** - [OSCP](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) was not detected.
+* **oscp.config** - [OSCP](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) is enabled but the config could not be determined by the check
 * **oscp.cert** - The [OSCP](https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol) certificate status returned by the server was not successfull.
 * **tls1** - TLSv1 was not detected, should be enabled to ensure compatibility with the largest secured user base.
 * **tls1.1** - TLSv1.1 was not detected, should be enabled to ensure compatibility with the largest secured user base.
