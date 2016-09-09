@@ -1,19 +1,23 @@
 const passmarked  = require('passmarked');
-const _           = require('lodash');
+const _           = require('underscore')
 
 /**
 * Creates the actual test
 **/
-var Test = require('passmarked').createTest(
+var Test = passmarked.createTest(
 
-  {},
-  require('./package.json'),
-  require('./worker.json'),
-  {
+  _.extend(
 
-    rules: require('./lib/rules')
+    {},
+    require('./package.json'),
+    require('./worker.json'),
+    {
 
-  }
+      rules: require('./lib/rules')
+
+    }
+
+  )
 
 );
 
