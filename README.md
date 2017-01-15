@@ -59,6 +59,8 @@ passmarked --filter=ssl example.com
 The hosted version allows free runs from our homepage and the option to register a site to check in its entirety.
 Using the Passmarked npm module (or directly via the API) integrations are also possible to get running reports with all the rules in a matter of seconds.
 
+> CA Certs are loaded on startup, and the .crt used to read in the certificates can be configured using `CA_CERTS`, the default is `/etc/ssl/certs/ca-certificates.crt` (for Ubuntu).
+
 ## Running Locally
 
 All rules can be run locally using our main integration library. This requires installing the package and any dependencies that the code might have such as a specific version of OpenSSL, see [#dependencies](#dependencies)

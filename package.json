@@ -1,6 +1,6 @@
 {
   "name": "@passmarked/ssl",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Rules that relate to checking the SSL configuration of each individual resolved server from the domain to ensure locked down config with the broadest compatibility",
   "main": "index.js",
   "engines": {
@@ -33,6 +33,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "async": "^0.7.0",
+    "cheerio": "^0.22.0",
     "heartbleed-check": "^1.0.0",
     "mocha": "^2.5.3",
     "moment": "^2.13.0",
