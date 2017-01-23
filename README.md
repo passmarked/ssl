@@ -17,6 +17,7 @@ The rules checked in this module are:
 * **anonymous** - Server has ciphers ciphers enabled
 * **connect** - Returned when the connection to the server over TLS/SSL could not be opened
 * **cipher** - Server has a known weak cipher enabled, any of the following ciphers will raise this issue: **NULL**, **EXPORT**, **LOW**, **3DES**, **MD5**, **RSK** or **RC4**
+* **clientside** - The page was opened on HTTP but was redirected to HTTPS using Javascript
 * **compression** - Server has TLS compression enabled which also leads to a vulnerability for the OpenSSL [CRIME](https://en.wikipedia.org/wiki/CRIME) attack
 * **crime** - Vulnerability to the [CRIME](https://en.wikipedia.org/wiki/CRIME) attack was found as TLS Compression was enabled
 * **expire** - The certificate is shorter than a month away from expiring.
