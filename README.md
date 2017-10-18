@@ -23,6 +23,10 @@ The rules checked in this module are:
 * **expire** - The certificate is shorter than a month away from expiring.
 * **expired** - The certificate presented by the server has expired and is not valid anymore
 * **freak** - The server has the **EXPORT** cipher enabled which leads to a vulnerability for the [FREAK](https://freakattack.com/) attack.
+* **form.internal** - An unsecurred internal form action from the HTTPS page will cause a browser to show a unsecure message
+* **form.external** - An unsecurred external form action from the HTTPS page will cause a browser to show a unsecure message
+* **field.creditcard** - The page will be shown as unsecure due to it not being over HTTPS but including a field identified as a credit card field
+* **field.password** - The page will be shown as unsecure due to it not being over HTTPS but including a password field
 * **heartbleed** - Vulnerability to the [HeartBleed](http://heartbleed.com/) attack was found
 * **host** - The certificate presented by the server did not have the host requested featured, leading to a hostname mismatch error.
 * **missing** - The server did not supply a certificate, this normally indicates that no certificate was configured although SSL is being offered.
