@@ -1,5 +1,5 @@
 # update to a newer version of openssl
-RUN apt-get update
+RUN apt-get -y update
 RUN apt-get install -y wget openssl libssl-dev
 
 # install our essentials to build openssl
