@@ -1,6 +1,6 @@
 {
   "name": "@passmarked/ssl",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Rules that relate to checking the SSL configuration of each individual resolved server from the domain to ensure locked down config with the broadest compatibility",
   "main": "index.js",
   "engines": {
